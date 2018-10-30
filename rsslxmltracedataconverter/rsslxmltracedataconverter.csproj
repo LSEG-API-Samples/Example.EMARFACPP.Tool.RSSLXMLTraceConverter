@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.10-x64</RuntimeIdentifiers>
+    <Authors>Moragodkrit Chumsri</Authors>
+    <Company>Refinitiv</Company>
+    <Product>RSSL Trace Data Converter</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RDMDictDecoder">
+      <HintPath>..\libs\rdmdictionarydecoder\netstandard2.0\RDMDictDecoder.dll</HintPath>
+    </Reference>
+    <Reference Include="RSSLTraceDecoder">
+      <HintPath>..\libs\rssltracedecoder\netstandard2.0\RSSLTraceDecoder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="IF NOT EXIST &quot;$(TargetDir)Dict\&quot; (md &quot;$(TargetDir)Dict&quot;) &#xD;&#xA;IF NOT EXIST &quot;$(TargetDir)Dict\RDMFieldDictionary&quot; ( copy &quot;$(ProjectDir)Dict\RDMFieldDictionary&quot; &quot;$(TargetDir)Dict&quot;)  &#xD;&#xA;IF NOT EXIST &quot;$(TargetDir)Dict\enumtype.def&quot; ( copy &quot;$(ProjectDir)Dict\enumtype.def&quot; &quot;$(TargetDir)Dict&quot;) &#xD;&#xA;" Condition="'$(OS)' != 'UNIX'" />
+    <Exec Command="mkdir -p $(TargetDir)\Dict" Condition="'$(OS)' == 'Unix'" />
+    <Copy SourceFiles="$(ProjectDir)Dict\RDMFieldDictionary" DestinationFolder="$(TargetDir)Dict" Condition="'$(OS)' == 'Unix'" />
+    <Copy SourceFiles="$(ProjectDir)Dict\enumtype.def" DestinationFolder="$(TargetDir)Dict" Condition="'$(OS)' == 'Unix'" />
+
+
+  </Target>
+
+</Project>
