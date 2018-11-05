@@ -1,8 +1,7 @@
 {
   "profiles": {
     "rsslxmltracedataconverter": {
-      "commandName": "Project",
-      "commandLineArgs": "-s C:\\bitbucketprj\\SampleTrace\\RSSLConsumerTrace_13816_1524031481897.xml "
+      "commandName": "Project"
     }
   }
 }

@@ -134,9 +134,9 @@ namespace RsslTraceXmlFileUtil
                             currentFragmentNum++;
                             var percentRead = currentFragmentNum / (double) numFragments;
                             percentRead *= 100.0;
-                            if ( percentRead>= percent && verbose )
+                            if ( percentRead>= percent )
                             {
-                                if(verbose) Console.WriteLine($"Processing completed {percent}% {currentFragmentNum}/{numFragments} elements");
+                                Console.WriteLine($"Processing completed {percent}% {currentFragmentNum}/{numFragments} elements");
                                 var r=new Random();
                                 percent += r.Next(10,18) ;
                                 if (percent > 100)
