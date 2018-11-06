@@ -180,11 +180,12 @@ namespace RsslTraceXmlFileUtil
                                                     fieldValue = output;
                                                 }
 
-                                                writer.WriteAttributeString(attributeName, attributeVal);
+                                              
                                                 writer.WriteAttributeString("decodedData",
                                                     fieldName == "Unknown" ? fieldValue : string.Empty);
+                                                writer.WriteAttributeString(attributeName, attributeVal);
 
-                                                if (fidId == 32480) // Found total_size
+                                                    if (fidId == 32480) // Found total_size
                                                 {
                                                     bMrnDecoding = false;
                                                     totalSize = 0;
