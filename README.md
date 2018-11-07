@@ -69,9 +69,11 @@ For EMA C++ application, to turn on the RSSL Trace log, a user has to copy EmaCo
 		
 ```
 
-Though you are setting server name/IP address and the RSSL port in application codes and not using the Channel config from the configuration file, you can also copy the configuration file to the running directory and set the config under DefaultConsumer or DefaultProvider section. 
+There are applications that setting server name/IP address and the RSSL port from application code and they might need to turn on the RSSL tracing log. This can be achieved by copying EMA configuration file to running directly.
 
-From the above sample, we set DefaultConsumer to Consumer_1 then EMA will check the value inside the configuration file and then verify option to turn on trace file from Consumer_1. EMA will generate the RSSL Tracing log file name EmaTrace_<id>.xml under the running directory.
+Though you are not using the Channel config from the configuration file, you can also copy the configuration file to the running directory and set the config under DefaultConsumer or DefaultProvider section. 
+
+From the above sample, we set DefaultConsumer to "Consumer_1" then EMA will check the value inside the configuration file and then verify option to turn on trace file from Consumer_1. EMA will generate the RSSL Tracing log file name EmaTrace_<id>.xml under the running directory.
 
 ## Utility download
 
