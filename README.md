@@ -77,7 +77,7 @@ From the above sample, we set DefaultConsumer to "Consumer_1" then EMA will chec
 
 ## Utility download
 
-The project and README are available for Download within from [GitHub](https://github.com/TR-API-Samples/Example.EMARFACPP.Tool.RSSLTraceViewer).
+The project and README are available for Download from [GitHub](https://github.com/TR-API-Samples/Example.EMARFACPP.Tool.RSSLTraceViewer).
 
 ## Running the Utility
 
@@ -428,7 +428,7 @@ To use the utility then you can just executing the following command.
 c:\<Project Publish Folder>\rsslxmltracedataconverter.exe -s <XML file path>
 ```
 
-For macOS and Linux you can just change the Runtime Identifier from __win-x64__ to __osx-x64__ and __linux-x64__ according to the list from[rid-catalog page](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
+For macOS and Linux you can just change the Runtime Identifier from __win-x64__ to __osx-x64__ and __linux-x64__ according to the list from [rid-catalog page](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
 
 Then you can run the utility from a publishing folder by executing command
 ```
