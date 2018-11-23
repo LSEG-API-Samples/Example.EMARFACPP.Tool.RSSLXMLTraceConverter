@@ -142,29 +142,42 @@ And below outputs is a sample of RSSL trace messages for original message and de
 Original XML Fragment.
 
 ```XML
-<!-- Incoming Message from '192.168.27.46:14002' on 'localhost' interface -->
-<!-- Time: 16:23:08:201 -->
+<!-- Incoming Message from '192.168.27.48:14002' on 'localhost' interface -->
+<!-- Time: 10:33:47:897 -->
 <!-- rwfMajorVer="14" rwfMinorVer="0" -->
-<updateMsg domainType="RSSL_DMT_NEWS_TEXT_ANALYTICS" streamId="3" containerType="RSSL_DT_FIELD_LIST" flags="0x1D2 (RSSL_UPMF_HAS_PERM_DATA|RSSL_UPMF_HAS_SEQ_NUM|RSSL_UPMF_DO_NOT_CACHE|RSSL_UPMF_DO_NOT_CONFLATE|RSSL_UPMF_DO_NOT_RIPPLE)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="54878" permData="0308 4310 153C" dataSize="1917">
+<updateMsg domainType="RSSL_DMT_NEWS_TEXT_ANALYTICS" streamId="3" containerType="RSSL_DT_FIELD_LIST" flags="0x1D2 (RSSL_UPMF_HAS_PERM_DATA|RSSL_UPMF_HAS_SEQ_NUM|RSSL_UPMF_DO_NOT_CACHE|RSSL_UPMF_DO_NOT_CONFLATE|RSSL_UPMF_DO_NOT_RIPPLE)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="55070" permData="0308 4310 229C" dataSize="750">
     <dataBody>
         <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
-            <fieldEntry fieldId="4148" data="0203 95A0"/>
-            <fieldEntry fieldId="17" data="0A0A 07E2"/>
+            <fieldEntry fieldId="4148" data="C2A2 76"/>
+            <fieldEntry fieldId="17" data="1B08 07E2"/>
             <fieldEntry fieldId="8593" data="5354 4F52 59"/>
             <fieldEntry fieldId="8506" data="32"/>
             <fieldEntry fieldId="11787" data="3130"/>
-            <fieldEntry fieldId="32480" data="0708"/>
+            <fieldEntry fieldId="32480" data="027A"/>
             <fieldEntry fieldId="32479" data="01"/>
-            <fieldEntry fieldId="4271" data="4E44 4C33 3644 5173 735F 3138 3130 3130 3234 5275 7543 6163 2F49 6C5A 542B 4F6B
-                6769 5A6F 7258 6E4A 787A 744F 3166 672F 565A 746A 6D57"/>
-            <fieldEntry fieldId="12215" data="4844 435F 5052 445F 41"/>
-            <fieldEntry fieldId="32641" data="1F8B 0800 0000 0000 02FF 8D57 6B73 DBB8 15FD DE5F 81D1 1727 2DF5 B493 78F5 A563
-                CBF2 6337 B6B4 B1B3 6953 753A 1079 2922 0601 2E00 4ACB 76FA DF7B 2E48 2A4E B7D3
-                ...
-                387B D74F CEFB C965 3F76 A26E 960F EDE4 7679 D14F 16DD EC7D BFF7 70F1 B4EA 043C
-                2C3F 7D68 67AB E5E2 AA5B 5CDF DE77 8BEB D5FB 76F2 B85A DCB5 B34F CB8F FC6B 8829
-                FC91 7EAD F9A7 D260 3E4D 065C 054C 8A5F 48A7 C900 B5C0 2363 BE03 85FF FEC3 7F00
-                5350 DB8A 870D 0000"/>
+            <fieldEntry fieldId="4271" data="4349 4635 4B63 684C 365F 3138 3038 3237 322B 456B 544E 6B67 5A4A 6A53 6B34 7A62
+                4371 3953 5472 614A 5A79 3573 666B 6761 4363 4762 6635"/>
+            <fieldEntry fieldId="12215" data="4854 435F 5052 445F 41"/>
+            <fieldEntry fieldId="32641" data="1F8B 0800 0000 0000 02FF 8D53 5B4F 1351 107E F757 98F3 6A5B F7EC D91B FB46 4AAD
+                DC96 DAAD D154 8C39 6D4F CBD2 B294 BD10 8A31 410D D114 C510 8D1A 8D51 498C 128C
+                A948 9020 E99F 81DD C293 7FC1 D9DD 9616 9EDC 8799 6F66 BE3D 33BB DF9C FB88 D69C
+                D112 5291 991C BD26 8E17 6726 2414 43D4 2D19 CC2C 321B A977 9096 51A1 A6A3 BB31
+                5498 2F35 80EB BFD9 F39B 5FE2 18AB 84FB 7BF8 ACD3 5EF7 561F 7BAB 1BC7 07EF FCDD
+                9D93 DDAF DEFE 4320 1CFF F93D 6D4D 9B10 784F B72F 9F7B 3AEB 2DA8 46D8 7FFB CD7F
+                B5D7 259F BCD8 F1DA 6BDE 8FB6 DFDC EEEC 6E46 0C91 2488 240F 6021 A0FA AF5B 5EF3
+                93F7 E133 34EF 9D8B A148 C43E 1694 90F9 AB75 FA72 F3DC 0084 4F88 A48F 252E E09D
+                6E7D 8761 0769 4282 1B52 B81E C69C 1CF2 BCE7 2DAF 75D8 79DF 1E60 6241 C25C 1F13
+                393C F0E3 D6C0 7061 0963 21C1 0F60 12F0 8E0F 0EFC D6C6 85DE F0C4 2327 2514 8E84
+                9D41 9BB2 61D9 4ED2 62D4 6181 6E3C 8795 38A7 C479 39C7 1195 F02A 1113 8224 E681
+                39C3 68A9 6698 0C58 472B CD48 1CFF E713 6FFF 5124 CED1 CA5A 4F42 7CA6 61F4 AF2F
+                C800 8719 41B3 B31D B987 154E E165 FE4A AA9A D3AA 95FC D8AC 5E15 960B C985 213D
+                67D1 B17C 43B4 CBD5 0A4D 16D3 85B2 18BC 6DDA 0E0D 166A AA0C 2B05 9B54 A366 C5A5
+                9560 B6E5 1920 CC31 DB86 30D7 A843 8A87 D898 EB06 C861 4BCE D5A5 78BD 460D 335E
+                3696 E0B3 63A8 6ECD 2F1A 2566 415D D383 FD0C 726E 4177 A8E3 C2D6 2268 E7A8 AE4D
+                0B35 0615 DB2D CCB2 A213 AE73 5AC5 9049 AB52 68E5 9BA1 1B0F AD0E 7652 C537 4642
+                9F92 43A7 8536 0B56 E3D5 617D 74B8 876E 6786 9311 4EF5 D3A9 C96C 3A42 E994 1681
+                89FC F51E D023 9099 9A88 402E 3BD2 05B7 82EB E5D0 2AD3 D982 1B5C 3DA4 E218 72AD
+                0A60 B872 2486 1699 651B F3E6 7F28 FFE0 D23F 14A1 A54F D703 0000"/>
         </fieldList>
     </dataBody>
 </updateMsg>
@@ -173,58 +186,89 @@ Original XML Fragment.
 Decoded data inside fieldEntry element containing additional attributes in the fieldEntry that are __fieldName__ and __decodedData__. For the updateMsg type for domainType __RSSL_DMT_NEWS_TEXT_ANALYTICS__, it has additional XML comments after the last MRN fragment containing the same GUID.
 
 ```XML
-<!-- Incoming Message from '192.168.27.46:14002' on 'localhost' interface -->
-<!-- Time: 16:23:08:831 -->
+<!-- Incoming Message from '192.168.27.48:14002' on 'localhost' interface -->
+<!-- Time: 10:33:47:186 -->
 <!-- rwfMajorVer="14" rwfMinorVer="0" -->
-<updateMsg domainType="RSSL_DMT_NEWS_TEXT_ANALYTICS" streamId="3" containerType="RSSL_DT_FIELD_LIST" flags="0x1D2 (RSSL_UPMF_HAS_PERM_DATA|RSSL_UPMF_HAS_SEQ_NUM|RSSL_UPMF_DO_NOT_CACHE|RSSL_UPMF_DO_NOT_CONFLATE|RSSL_UPMF_DO_NOT_RIPPLE)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="54910" permData="0308 4310 127B 1221 4B12 287C" dataSize="698">
+<updateMsg domainType="RSSL_DMT_NEWS_TEXT_ANALYTICS" streamId="3" containerType="RSSL_DT_FIELD_LIST" flags="0x1D2 (RSSL_UPMF_HAS_PERM_DATA|RSSL_UPMF_HAS_SEQ_NUM|RSSL_UPMF_DO_NOT_CACHE|RSSL_UPMF_DO_NOT_CONFLATE|RSSL_UPMF_DO_NOT_RIPPLE)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="54990" permData="0308 4310 121B 1026 0B10 263B 1027 6B10 299B 1228 6B12 289B 1229 1B12 329C" dataSize="603">
     <dataBody>
         <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
-            <fieldEntry fieldId="4148" fieldName="TIMACT_MS" data="0203 979F" decodedData="9:23:9:855" />
-            <fieldEntry fieldId="17" fieldName="ACTIV_DATE" data="0A0A 07E2" decodedData="10/10/2018" />
-            <fieldEntry fieldId="8593" fieldName="MRN_TYPE" data="5354 4F52 59" decodedData="STORY" />
-            <fieldEntry fieldId="8506" fieldName="MRN_V_MAJ" data="32" decodedData="2" />
-            <fieldEntry fieldId="11787" fieldName="MRN_V_MIN" data="3130" decodedData="10" />
-            <fieldEntry fieldId="32480" fieldName="TOT_SIZE" data="0245" decodedData="581" />
-            <fieldEntry fieldId="32479" fieldName="FRAG_NUM" data="01" decodedData="1" />
-            <fieldEntry fieldId="4271" fieldName="GUID" data="4253 4562 7050 5177 745F 3138 3130 3130 3259 4D56 3451 386A 4974 744D 4E4C 6767                 4C53 5231 6B36 6D41 4E53 7656 592F 6636 4F4A 6572 7132" decodedData="BSEbpPQwt_1810102YMV4Q8jIttMNLggLSR1k6mANSvVY/f6OJerq2" />
-            <fieldEntry fieldId="12215" fieldName="MRN_SRC" data="4844 435F 5052 445F 41" decodedData="HDC_PRD_A" />
-            <fieldEntry fieldId="32641" fieldName="FRAGMENT" data="1F8B 0800 0000 0000 02FF 8D53 DB4E DB40 107D EF57 ACF6 A14F 21BE 0542 5642 1524                 8106 2506 620A A24D 55AD ED71 B2E0 ACCD EE2C 1455 FDF7 CEC6 2D6A 5F2A 244B 73D9                 9933 B7E3 1F5C D638 2BB9 E0FA 249B E6ED E5D5 33F2 1E97 AE54 A00B B05C ...
-            0364 F0E8 3C7B B888 7ADC 9935 E9F4 3B24 3DFE 44D7 548D 7EC3 B17E BEFB 050F 719E                 4B90 0300 00" decodedData="1F8B08000000000002FF8D53DB4EDB40107DEF57ACF6A14F21BE05425642152481062506620AA24D55ADED71B2E0ACCDEE2C1455FDF7CEC62D6A5F2A244B73D99933B7E31F5CD6382BB9E0FA249BE6EDE5D533F21E97AE54A00BB05C7CE1E9A5A0B76372775ADA69E374F9AA1CF3AF3D9E37E50B01ADF41D587622F5039B63C99E54094CA16535208261A54428D945814D4E5638EAB1388C0E7B6C232D53BA6ACC969EA90A9379E370A533A4842D68644DC5269023CBA07046A1021BA4E3896594C37003AC05A39A92812E09218396D27C891DFC4AB7CE582709061B964D4F666CAC4CE16A69580ED228BD66062A307E6AA69B3E1BCF96C16C310926A77B5170300C0866D835BFD2E74E034BC25DEBC3FE4AAFF406B11541D09655DF80A3396DBF68B6DED6F06CFFC8BEB4ED07753448C2FD5191E45508C9707F10BD7747CE68E123B6B5F82B5FF8DEA3300AC5EE3A6787B7E7035F8DF65E2963716CC037444BF7817B5148DF7538127122C2517F38187EA6C80DC8B2561A28EA9FC3ECB1B7ADF63F6B2574E5ABBF52E75BD76E7CB7B8195C1DDECF1017E97CBD9E67CBE8E1607B9C664F3777417570710EE631F6D9DAA2F43CBBA88869C4A15AEAB5936BDF2CF831B7602D99D72F2DB962B2D5F6B7C111BE63D0D652F9B8D6349E6886FC69E649EA7D2EF7133A2231A732289C95790DF4625D7E0F05EED8BD10D1D5847C0B91C49DF8B813E927CFEE58CC3BBEC762717D3939EDD4747ABBECB4E5F4CC531FE50364F0E83C7BB8887ADC9935E9F43B243DFE44D7548D7EC3B17EBEFB050F719E4B90030000" />
+            <fieldEntry fieldId="4148" fieldName="TIMACT_MS" decodedData="3:32:34:972" data="C2A0 1C" />
+            <fieldEntry fieldId="17" fieldName="ACTIV_DATE" decodedData="27/8/2018" data="1B08 07E2" />
+            <fieldEntry fieldId="8593" fieldName="MRN_TYPE" decodedData="STORY" data="5354 4F52 59" />
+            <fieldEntry fieldId="8506" fieldName="MRN_V_MAJ" decodedData="2" data="32" />
+            <fieldEntry fieldId="11787" fieldName="MRN_V_MIN" decodedData="10" data="3130" />
+            <fieldEntry fieldId="32480" fieldName="TOT_SIZE" decodedData="487" data="01E7" />
+            <fieldEntry fieldId="32479" fieldName="FRAG_NUM" decodedData="1" data="01" />
+            <fieldEntry fieldId="4271" fieldName="GUID" decodedData="Fit8qHst3_1808271dUZiszrYcZVxzs/aOiAgzzPesf2pQPC9AJY/p" data="4669 7438 7148 7374 335F 3138 3038 3237 3164 555A 6973 7A72 5963 5A56 787A 732F                 614F 6941 677A 7A50 6573 6632 7051 5043 3941 4A59 2F70" />
+            <fieldEntry fieldId="12215" fieldName="MRN_SRC" decodedData="HTC_PRD_A" data="4854 435F 5052 445F 41" />
+            <fieldEntry fieldId="32641" fieldName="FRAGMENT" decodedData="1F8B08000000000002FF8D92C1729B301086EF7D0A46975E92DAE0C660DD04089BD4088220A9DDE9746423BBB40E2648646267FAEE9580DAD75EF6FFF6D70AED0ABD037690610120A882523A2F0B2127E006B0B62879B5E502C06F8024D0579E12DC4BD44B06BEDF80CDB138A9DDCAD9958D905EC399E4FA7BD6D8746EC7CEAD6567E3099C58D0B23F7DB6666B55F993B3E250565C550561E62DA091A22C2473232686B70809328238CD72828D2522FE476AB831F18D9CA020C05E867DC35D19194A8C90D21C114F7755EA232F13FC309DB163D96691AF4B716E56DBF5E3DB598C585CA2FDF99C70B1B3EA87C49BA1FBD5A8D6BB2B21991E37DEA981D5540756ED5BB6D71DF24A153C7321549A9D6A65992A2F9F870448FE2647F58195BAAE6E8EAF65C11BE5130AD32CA5DA6C375432D9AACB04EA1C095BC13607AE5644BBF9C5B7B2BB65042DE52098ABE8427366776ADDDD0D3AED743AEBC4EE5D5B176138ED22E9E2938A73687671DA45B74FBE7451F71341F3C1EFF5E97E50BD4A2C88101A808617FA9A20AF67CF8F062083C62449AF48075C79C995C6CE85AFEBF49FEBBB590FF87A248ED2794F81B7E861114778208ADDA5DF7348F31E96786828C28F443F4BC97E73CA5F5AFD88BB3FD6367BC5A78E5F7923CA63F51F6FF5CF87BF09CC834221030000" data="1F8B 0800 0000 0000 02FF 8D92 C172 9B30 1086 EF7D 0A46 975E 92DA E0C6 60DD 0408                 9BD4 0882 20A9 DDE9 7464 23BB B40E 2648 6462 67FA EE95 80DA D75E F6FF F6D7 0AED                 0ABD 0376 9061 0120 A882 523A 2F0B 2127 E006 B0B6 2879 B5E5 02C0 6F80 24D0 579E                 12DC 4BD4 4B06 BEDF 80CD B138 A9DD CAD9 958D 905E C399 E4FA 7BD6 D874 6EC7 CEAD                 6567 E309 9C58 D0B2 3F7D B666 6B55 F993 B3E2 5056 5C55 0561 E62D A091 A22C 2473                 2326 86B7 0809 3282 38CD 7282 8D25 22FE 476A B831 F18D 9CA0 20C0 5E86 7DC3 5D19                 194A 8C90 D21C 114F 7755 EA23 2F13 FC30 9DB1 63D9 6691 AF4B 716E 56DB F5E3 DB59                 8C58 5CA2 FDF9 9C70 B1B3 EA87 C49B A1FB D5A8 D6BB 2B21 991E 37DE A981 D554 0756                 ED5B B6D7 1DF2 4A15 3C73 2154 9A9D 6A65 992A 2F9F 8704 48FE 2647 F581 95BA AE6E                 8EAF 65C1 1BE5 130A D32C A5DA 6C37 5432 D9AA CB04 EA1C 095B C136 07AE 5644 BBF9                 C5B7 B2BB 6504 2DE5 2098 ABE8 4273 6677 6ADD DD0D 3AED 743A EBC4 EE5D 5B17 6138                 ED22 E9E2 938A 7368 7671 DA45 B74F BE74 51F7 1341 F3C1 EFF5 E97E 50BD 4A2C 8810                 1A80 8617 FA9A 20AF 67CF 8F06 2083 C624 49AF 4807 5C79 C995 C6CE 85AF EBF4 9FEB                 BB59 0FF8 7A24 8ED2 794F 81B7 E861 1147 7820 8ADD A5DF 7348 F31E 9678 6828 C28F                 443F 4BC9 7E73 CA5F 5AFD 88BB 3FD6 367B C5A7 8E5F 7923 CA63 F51F 6FF5 CF87 BF09                 CC83 4221 0300 00" />
         </fieldList>
     </dataBody>
 </updateMsg>
 <!--{
-  "altId": "nBSEbpPQwt",
+  "altId": "nFit8qHst3",
   "audiences": [
-    "NP:BSEA",
-    "NP:BSEN",
-    "NP:CNR",
-    "NP:CNRA"
+    "NP:D",
+    "NP:E",
+    "NP:M",
+    "NP:T"
   ],
-  "body": "\nYes Bank Ltd vide its letter dated October 09, 2018, has informed BSE about\nStatement of Debt Securities/NCDs for the period ended September 2018,\npursuant to SEBI Circular bearing reference no. CIR/IMD/DF-1/67/2017 dated\nJune 30, 2017.\n\nhttp://pdf.reuters.com/pdfnews/pdfnews.asp?i=43059c3bf0e37541&u=urn:newsml:reuters.com:20181010:nBSEbG8WJ4\n\n",
-  "firstCreated": "2018-10-10T09:23:09.747Z",
-  "headline": "Yes Bank Ltd - Statement of Debt Securities/NCDs for period ended September 2018",
-  "id": "BSEbpPQwt_1810102YMV4Q8jIttMNLggLSR1k6mANSvVY/f6OJerq2",
+  "body": "",
+  "firstCreated": "2018-08-27T03:32:27.429Z",
+  "headline": "FITCH: RATING ON CHINA FORTUNE LAND'S BOND UNAFFECTED BY TAP ISSUANCE",
+  "id": "Fit8qHst3_1808271dUZiszrYcZVxzs/aOiAgzzPesf2pQPC9AJY/p",
   "instancesOf": [],
   "language": "en",
-  "messageType": 2,
+  "messageType": 1,
   "mimeType": "text/plain",
-  "provider": "NS:BSE",
+  "provider": "NS:RTRS",
   "pubStatus": "stat:usable",
   "subjects": [
+    "A:2",
+    "A:U",
+    "B:197",
+    "B:255",
+    "B:256",
+    "B:69",
+    "B:75",
+    "B:77",
+    "E:6",
+    "E:N",
+    "E:W",
+    "G:1",
+    "G:6",
+    "G:B1",
+    "G:K",
+    "G:S",
     "M:1QD",
-    "M:32",
-    "M:3H",
-    "M:NU",
+    "M:1WJ",
+    "M:1WK",
+    "N2:AAA",
+    "N2:ASIA",
+    "N2:ASXPAC",
+    "N2:CDM",
+    "N2:CN",
+    "N2:CONPR",
+    "N2:CONPS",
+    "N2:CYCP",
+    "N2:CYCP08",
+    "N2:CYCS",
+    "N2:CYCS08",
+    "N2:DBT",
+    "N2:EASIA",
+    "N2:EMRG",
+    "N2:FCH",
+    "N2:HOME",
+    "N2:HSEBLD",
+    "N2:ISU",
     "N2:LEN",
-    "N2:MTPDF",
-    "N2:NEWR",
-    "N2:REG"
+    "N2:MEVN"
   ],
   "takeSequence": 1,
-  "urgency": 3,
-  "versionCreated": "2018-10-10T09:23:09.747Z"
+  "urgency": 1,
+  "versionCreated": "2018-08-27T03:32:27.429Z"
 }-->
+
 ```
 
 Note that there is command line option "--verbose" which can print JSON output to console while the utility processing the data.
@@ -233,165 +277,56 @@ In addition to using the utility to decode MRN data, as described in the overvie
 
 ```XML
 <!-- Incoming Message from '192.168.27.46:14002' on 'localhost' interface -->
-<!-- Time: 13:05:16:687 -->
+<!-- Time: 13:05:27:756 -->
 <!-- rwfMajorVer="14" rwfMinorVer="0" -->
-<refreshMsg domainType="RSSL_DMT_MARKET_BY_ORDER" streamId="4" containerType="RSSL_DT_MAP" flags="0xFA (RSSL_RFMF_HAS_PERM_DATA|RSSL_RFMF_HAS_MSG_KEY|RSSL_RFMF_HAS_SEQ_NUM|RSSL_RFMF_SOLICITED|RSSL_RFMF_REFRESH_COMPLETE|RSSL_RFMF_HAS_QOS)" groupId="2" seqNum="15472" permData="0308 4249 50C0" qosDynamic="0" qosRate="1" qosTimeliness="1" dataState="RSSL_DATA_OK" streamState="RSSL_STREAM_OPEN" code="RSSL_SC_NONE" text="All is well" dataSize="937">
-    <key flags="0x7 (RSSL_MKF_HAS_SERVICE_ID|RSSL_MKF_HAS_NAME|RSSL_MKF_HAS_NAME_TYPE)" serviceId="2114" name="0005.HK" nameType="1" />
+<updateMsg domainType="RSSL_DMT_MARKET_BY_ORDER" streamId="4" containerType="RSSL_DT_MAP" flags="0x10 (RSSL_UPMF_HAS_SEQ_NUM)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="15600" dataSize="79">
     <dataBody>
-        <map flags="0x0" countHint="0" keyPrimitiveType="RSSL_DT_BUFFER" containerType="RSSL_DT_FIELD_LIST">
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@13F9EC03">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3333 3531 3435 3938 37" decodedData="335145987" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 0D24" decodedData="68.9" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="02" decodedData="ASK(2)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E01 90" decodedData="400" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="6984 67" decodedData="1:55:15:175" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
+        <map flags="0x2 (RSSL_MPF_HAS_SUMMARY_DATA)" countHint="0" keyPrimitiveType="RSSL_DT_BUFFER" containerType="RSSL_DT_FIELD_LIST">
+            <summaryData>
+                <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
+                    <fieldEntry fieldId="4148" fieldName="TIMACT_MS" decodedData="6:3:44:900" data="014D 0584" />
                 </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@4353803">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3730 3539 3636 3131" decodedData="70596611" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 03C4" decodedData="66.5" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E03 20" decodedData="800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="55AF 73" decodedData="1:33:35:475" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@3F036903">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3130 3537 3138 3830 3939" decodedData="1057188099" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 0842" decodedData="67.65" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E06 40" decodedData="1600" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="0141 6B02" decodedData="5:51:4:450" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@676503">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3637 3736 3036 37" decodedData="6776067" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 0360" decodedData="66.4" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E03 20" decodedData="800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="493E C8" decodedData="1:20:0:200" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@2928D703">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3639 3035 3432 3333 39" decodedData="690542339" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 07AC" decodedData="67.5" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E04 B0" decodedData="1200" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="9C82 68" decodedData="2:50:57:0" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@133EF03">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3230 3138 3037 3339" decodedData="20180739" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 04BE" decodedData="66.75" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E0C 80" decodedData="3200" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="52CB 82" decodedData="1:30:26:50" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@40064F03">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3130 3734 3135 3532 3637" decodedData="1074155267" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 07DE" decodedData="67.55" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E5D C0" decodedData="24000" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="0148 795B" decodedData="5:58:46:875" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@1C4E1E03">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3437 3438 3831 3533 39" decodedData="474881539" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 07AC" decodedData="67.5" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E03 20" decodedData="800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="79B5 6C" decodedData="2:12:56:300" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@FB103">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3130 3238 3335 35" decodedData="1028355" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 1940" decodedData="72" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="02" decodedData="ASK(2)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E51 40" decodedData="20800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="493E AF" decodedData="1:20:0:175" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@19C503">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3136 3838 3833 35" decodedData="1688835" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 10A8" decodedData="69.8" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="02" decodedData="ASK(2)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E03 20" decodedData="800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="493E AF" decodedData="1:20:0:175" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@5FDF003">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3130 3035 3238 3133 31" decodedData="100528131" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 0716" decodedData="67.35" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E09 60" decodedData="2400" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="570A 9E" decodedData="1:35:4:350" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@FFE903">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3136 3737 3133 3331" decodedData="16771331" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 05B8" decodedData="67" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E07 D0" decodedData="2000" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="52A4 72" decodedData="1:30:16:50" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@D68203">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3134 3035 3739 3837" decodedData="14057987" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 07AC" decodedData="67.5" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E03 20" decodedData="800" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="5289 1A" decodedData="1:30:9:50" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@47D003">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3437 3036 3330 37" decodedData="4706307" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 0360" decodedData="66.4" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="01" decodedData="BID(1)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E27 10" decodedData="10000" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="493E C8" decodedData="1:20:0:200" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
-                </fieldList>
-            </mapEntry>
-            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@250003">
-                <fieldList flags="0x9 (RSSL_FLF_HAS_FIELD_LIST_INFO|RSSL_FLF_HAS_STANDARD_DATA)" fieldListNum="32767" dictionaryId="1">
-                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" data="3234 3234 3833 35" decodedData="2424835" />
-                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" data="0B01 2CC8" decodedData="77" />
-                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" data="02" decodedData="ASK(2)" />
-                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" data="0E15 E0" decodedData="5600" />
-                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" data="493E AF" decodedData="1:20:0:175" />
-                    <fieldEntry fieldId="6522" fieldName="PR_DATE" data="040A 07E2" decodedData="4/10/2018" />
+            </summaryData>
+            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@4159CC03">
+                <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
+                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" decodedData="67.65" data="0B01 0842" />
+                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" decodedData="2000" data="0E07 D0" />
+                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" decodedData="BID(1)" data="01" />
+                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" decodedData="1096403971" data="3130 3936 3430 3339 3731" />
+                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" decodedData="6:3:44:900" data="014D 0584" />
+                    <fieldEntry fieldId="6522" fieldName="PR_DATE" decodedData="4/10/2018" data="040A 07E2" />
                 </fieldList>
             </mapEntry>
         </map>
     </dataBody>
-</refreshMsg>
+</updateMsg>
+
+
+<!-- Incoming Message from '192.168.27.46:14002' on 'localhost' interface -->
+<!-- Time: 13:05:29:276 -->
+<!-- rwfMajorVer="14" rwfMinorVer="0" -->
+<updateMsg domainType="RSSL_DMT_MARKET_BY_ORDER" streamId="4" containerType="RSSL_DT_MAP" flags="0x10 (RSSL_UPMF_HAS_SEQ_NUM)" updateType="0 (RDM_UPD_EVENT_TYPE_UNSPECIFIED)" seqNum="15616" dataSize="79">
+    <dataBody>
+        <map flags="0x2 (RSSL_MPF_HAS_SUMMARY_DATA)" countHint="0" keyPrimitiveType="RSSL_DT_BUFFER" containerType="RSSL_DT_FIELD_LIST">
+            <summaryData>
+                <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
+                    <fieldEntry fieldId="4148" fieldName="TIMACT_MS" decodedData="6:3:46:400" data="014D 0B60" />
+                </fieldList>
+            </summaryData>
+            <mapEntry flags="0x0" action="RSSL_MPEA_ADD_ENTRY" key="5@415ADF03">
+                <fieldList flags="0x8 (RSSL_FLF_HAS_STANDARD_DATA)">
+                    <fieldEntry fieldId="3427" fieldName="ORDER_PRC" decodedData="67.7" data="0B01 0874" />
+                    <fieldEntry fieldId="3429" fieldName="ORDER_SIZE" decodedData="14800" data="0E39 D0" />
+                    <fieldEntry fieldId="3428" fieldName="ORDER_SIDE" decodedData="ASK(2)" data="02" />
+                    <fieldEntry fieldId="3426" fieldName="ORDER_ID" decodedData="1096474371" data="3130 3936 3437 3433 3731" />
+                    <fieldEntry fieldId="6520" fieldName="PR_TIM_MS" decodedData="6:3:46:400" data="014D 0B60" />
+                    <fieldEntry fieldId="6522" fieldName="PR_DATE" decodedData="4/10/2018" data="040A 07E2" />
+                </fieldList>
+            </mapEntry>
+        </map>
+    </dataBody>
+</updateMsg>
+
 ``` 
  
 ### Launching the tool from executable file
