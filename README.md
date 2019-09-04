@@ -90,6 +90,13 @@ Start a command prompt and change the folder to "<GitHub Repo>\Example.EMARFACPP
 ```
 dotnet build
 ```
+
+Note that on windows you can also build executeable file (.exe) using the following command
+```
+dotnet publish -c Release -r win10-x64
+```
+It will create rsslxmltracedataconverter.exe under folder bin\Release\netcoreapp2.1\win10-x64.
+
 To build the project then just type __dotnet run__ to run the application. It will automatically compile and build the project and run the application. It shows the following console output after running __dotnet run__.
 
 ```
