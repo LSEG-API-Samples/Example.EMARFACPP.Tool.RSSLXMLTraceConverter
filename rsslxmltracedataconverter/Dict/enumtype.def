@@ -11,10 +11,10 @@
 !
 !tag Filename    ENUMTYPE.001
 !tag Desc        IDN Marketstream enumerated tables
-!tag RT_Version  4.20.33
-!tag Build_RDMD  4.20.33
-!tag DT_Version  18.81
-!tag Date        17-Sep-2018
+!tag RT_Version  4.20.38
+!tag Build_RDMD  4.20.38
+!tag DT_Version  19.81
+!tag Date        16-Sep-2019
 !tag DictionaryId 1
 !
 ! This file contains all the enumerated types used by the head-end
@@ -38,7 +38,7 @@ RDN_EXCHID     4
       5        "PSE"   NYSE Arca
       6        "XPH"   NASDAQ OMX PSX when trading in SIAC (formerly Philadelphia Stock Exchange)
       7        "THM"   NASDAQ InterMarket
-      8        "MID"   Chicago Stock Exchange
+      8        "MID"   NYSE Chicago
       9        "NYQ"   Consolidated Issue, listed by NYSE
      10        "TOR"   Toronto Stock Exchange
      11        "MON"   Montreal Stock Exchange
@@ -190,7 +190,7 @@ RDN_EXCHID     4
     157        "MAU"   Mauritius Stock Exchange
     158        "SET"   The Stock Exchange of Thailand
     159        "BAH"   BAHRAIN BOURSE
-    160        "CAI"   Cairo Stock Exchange
+    160        "CAI"   The Egyptian Exchange
     161        "AMM"   Amman Stock Exchange
     162        "KUW"   Boursa Kuwait
     163        "BUE"   Buenos Aires Stock Exchange
@@ -244,7 +244,7 @@ RDN_EXCHID     4
     211        "MCP"   Interbolsa - Portuguese Continuous Market
     212        "OTB"   Osterreichische Termin und Optionenboerse (Austrian FOX)
     213        "SIC"   Singapore Commodity Exchange
-    214        "RCT"   SOURCE IS A THOMSON REUTERS CONTRIBUTOR
+    214        "RCT"   Source is a Refinitiv Contributor
     215        "IGF"   Italian Government Forwards
     216        "MWQ"   Consolidated issue, listed by Midwest SE
     217        "PSQ"   Consolidated issue, listed by Pacific SE
@@ -531,7 +531,7 @@ MN_IIN_CCY 13596
     795        "TMM"   Turkmenistan manat
     800        "UGX"   Uganda shilling
     804        "UAK"   Ukrainian karbovanet
-    807        "MKD"   Macedonian denar
+    807        "MKD"   North Macedonian Denar
     810        "RUB"   Russian ruble
     818        "EGP"   Egyptian pound
     826        "GBP"   UK pound sterling
@@ -661,6 +661,7 @@ MN_IIN_CCY 13596
    2041        "QAd"   Qatari Dirham
    2042        "SAh"   Saudi Halala
    2043        "AEf"   UAE Fils
+   2044        "ZZ9"   Cryptocurrency
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -948,7 +949,7 @@ BIDXID      3298
       5        "PSE"   NYSE Arca
       6        "XPH"   Philadelphia Stock Exchange
       7        "THM"   Third Market Stock - OTC
-      8        "MID"   Chicago Stock Exchange
+      8        "MID"   NYSE Chicago
      10        "TOR"   Toronto Stock Exchange
      11        "CVE"   TSX Venture Exchange (formerly known as Canadian Ventures Exchange)
      12        "PTX"   Canadian Securities Exchange/PURE - CSE Listed & Other Canadian Listed Securities
@@ -1067,6 +1068,12 @@ BLKTRDP_UT 12847
      24       "Dlr "   2 Decimal places, MPV = whole dollars
      25       "0.5c"   3 Decimal places, MPV = 0.5 cents (or 0.005)
      26       "8DP "   8 decimal places
+     27       "9DP "   9 decimal places
+     28       "10DP"   10 decimal places
+     29       "11DP"   11 decimal places
+     30       "12DP"   12 decimal places
+     31       "13DP"   13 decimal places
+     32       "14DP"   14 decimal places
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -4089,6 +4096,9 @@ CAN_COND    6585
    2255        "DVP"   Regular + Derivativley Priced
    2275        "DAB"   Regular + Derivativley Priced +Average Price or bunched
    2365        "DAP"   Regular + Derivativley Priced +Average Price Trade
+  21330        "EBO"   EBBO European Best Bid Offer Trade
+  21331        "CSC"   Cancellation of Scheduled Auction Trade
+  21332        "SCH"   Scheduled Auction Trade
   21333        "INT"   Internal Cross
   21334        "NON"   Cross trade from another venue
   21335        "NAT"   National Cross
@@ -4100,6 +4110,8 @@ CAN_COND    6585
   21343        "BMR"   Benchmark Trade. Out of Sequence Retransmission. (OPRA).
   21345        "TTE"   Trade Trough Exempt. Out of Sequence. Not LAST (OPRA).
   21346        "TTR"   Trade Through Exempt. Out of sequence Retransmission. (OPRA).
+  32671        "IQS"   Indicative Quote System Originated Trades
+  32672        "TAC"   Trading at Closing Price
   32673        "ERT"   Exercise Related Transaction
   32674        "LCT"   Linked Component Transaction
   32675        "BOT"   Beneficial Ownership Transfer Transaction
@@ -5139,6 +5151,7 @@ OFF_CD_IN2  1055
      58        "TWI"   Tradeweb ID Code
      59        "RED"   RED ID code for Credit Default Swaps
      60        "TSH"   TOSHO - Tokyo SE security Identification number
+     61        "BAS"   Buenos Aires code
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -6920,6 +6933,7 @@ CLR_CTRY   13580
     566        "NGA"   Nigeria
     570        "NIU"   NIUE
     574        "NFK"   NORFOLK ISLAND
+    576        "PRK"   North Korea
     578        "NOR"   Norway
     580        "MNP"   NORTHERN MARIANA ISLANDS
     581        "UMI"   UNITED STATES MINOR OUTLYING ISLANDS
@@ -7061,6 +7075,7 @@ CRS_EXID   13551
 BLK_EXID   13552
 LEG3_EXCH  13572
 LEG4_EXCH  13574
+ORDER_EXID 13603
 !
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
@@ -7072,7 +7087,7 @@ LEG4_EXCH  13574
       5        "PSE"   NYSE Arca
       6        "XPH"   NASDAQ OMX PSX when trading in SIAC (formerly Philadelphia Stock Exchange)
       7        "THM"   NASDAQ InterMarket
-      8        "MID"   Chicago Stock Exchange
+      8        "MID"   NYSE Chicago
       9        "NYQ"   Consolidated Issue, listed by NYSE
      10        "TOR"   Toronto Stock Exchange
      11        "MON"   Montreal Stock Exchange
@@ -7224,7 +7239,7 @@ LEG4_EXCH  13574
     157        "MAU"   Mauritius Stock Exchange
     158        "SET"   The Stock Exchange of Thailand
     159        "BAH"   BAHRAIN BOURSE
-    160        "CAI"   Cairo Stock Exchange
+    160        "CAI"   The Egyptian Exchange
     161        "AMM"   Amman Stock Exchange
     162        "KUW"   Boursa Kuwait
     163        "BUE"   Buenos Aires Stock Exchange
@@ -7278,7 +7293,7 @@ LEG4_EXCH  13574
     211        "MCP"   Interbolsa - Portuguese Continuous Market
     212        "OTB"   Osterreichische Termin und Optionenboerse (Austrian FOX)
     213        "SIC"   Singapore Commodity Exchange
-    214        "RCT"   SOURCE IS A THOMSON REUTERS CONTRIBUTOR
+    214        "RCT"   Source is a Refinitiv Contributor
     215        "IGF"   Italian Government Forwards
     216        "MWQ"   Consolidated issue, listed by Midwest SE
     217        "PSQ"   Consolidated issue, listed by Pacific SE
@@ -7618,7 +7633,7 @@ LEG4_EXCH  13574
     551        "LCA"   NYSE American when trading NASDAQ Global Market
     552        "LCB"   Boston Stock Exchange for Nasdaq Large Cap
     553        "LCC"   NYSE National Exchange for Nasdaq Large Cap
-    554        "LCM"   Chicago Stock Exchange for Nasdaq Large Cap
+    554        "LCM"   NYSE Chicago for Nasdaq Large Cap
     555        "LCN"   New York Stock Exchange for Nasdaq Large Cap
     556        "LCP"    NYSE Arca FOR NASDAQ LARGE CAP
     557        "LCW"   Chicago Board Options Exchange for Nasdaq Large Cap Equity
@@ -7628,7 +7643,7 @@ LEG4_EXCH  13574
     561        "SCA"   NYSE American when trading NASDAQ Global Market
     562        "SCB"   Boston Stock Exchange for Nasdaq Capital Market
     563        "SCC"   NYSE National Exchange for Nasdaq Capital Market
-    564        "SCM"   Chicago Stock Exchange for Nasdaq Capital Market
+    564        "SCM"   NYSE Chicago for Nasdaq Capital Market
     565        "SCN"   New York Stock Exchange for Nasdaq Capital Market
     566        "SCP"   NYSE Arca FOR NASDAQ SMALL CAP
     567        "SCW"   Chicago Board Options Exchange for Nasdaq Capital Market
@@ -7715,7 +7730,7 @@ LEG4_EXCH  13574
     648        "GSA"   NYSE American when trading NASDAQ Global Select Market
     649        "GSB"   Boston SE when trading Nasdaq Global Select Market
     650        "GSW"   CBOE when trading Nasdaq Global Select Market
-    651        "GSM"   Chicago SE when trading Nasdaq Global Select Market
+    651        "GSM"   NYSE Chicago for Nasdaq Global Select Market
     652        "GSC"   NYSE National Exchange when trading Nasdaq Global Select Market
     653        "GSI"   ISE when trading Nasdaq Global Select Market
     654        "GSL"   NASD TRF when trading Nasdaq Global Select Market
@@ -8055,7 +8070,7 @@ LEG4_EXCH  13574
     988        "TRZ"   Thomson Reuters Indices (TR indices)
     989        "CIF"   CONSOLIDATED INDIAN INTEREST RATE FUTURES
     990        "XI2"   XETRA INTERNATIONAL MARKET LEVEL 2
-    991        "NZE"   NEW ZEALAND STOCK EXCHANGE
+    991        "NZE"   NEW ZEALAND STOCK EXCHANGE (DO NOT USE)
     992        "GPI"   Global Ports
     993        "CGH"   CEGH GAS EXCHANGE AT WIENERBOERSE
     994        "CCP"   Consolidated Quote/Trade - Level 1 - Premium Service
@@ -8341,7 +8356,7 @@ LEG4_EXCH  13574
    1274        "ISD"   ICAP Securities and Derivatives Exchange
    1275        "CX2"   CHI-X CANADA - CX2 - 2ND LIT MARKET
    1276        "CXX"   CHI-X CANADA - 2ND LIT MARKET - L1
-   1277        "NZX"   New Zealand Stock Exchange
+   1277        "NZX"   New Zealand Stock Exchange (DO NOT USE)
    1278        "ODE"   Osaka Dojima Commodities Exchange
    1279        "CS1"   CHI-X CANADA - TSX VENTURE L1
    1280        "CS2"   CHI-X CANADA ATS TSX VENTURE L1 AND L2
@@ -8588,6 +8603,62 @@ LEG4_EXCH  13574
    1521        "NFC"   NASDAQ/FINRA TRADE REPORTING FACILITY-TRF CHICAGO
    1522        "MAR"   Ministry of Agriculture and Rural Information Center, China
    1523        "MAS"   MONETARY AUTHORITY OF SINGAPORE
+   1524        "MXQ"   CONSOLIDATED MEXICAN EXCHANGES
+   1525        "NXX"   NEX Exchange
+   1526        "EMA"   Euronext Access Paris
+   1527        "NCA"   NATIONAL CONFECTIONERS ASSOCIATION
+   1528        "MAA"   Morgan Stanley MTF
+   1529        "IFC"   INTL FCStone Inc
+   1530        "EMM"   European Money Markets Institute
+   1531        "EML"   Euronext Access Lisbon
+   1532        "EMB"   Euronext Access Brussels
+   1533        "ATE"   Athens Stock Exchange APA
+   1534        "TRO"   TRADEcho
+   1535        "UGC"   US Grains Council
+   1536        "GTX"   GETTEX
+   1537        "UEE"   Ukrainian Energy Exchange
+   1538        "MTY"   MTS CYPRUS
+   1539        "4AX"   4 AFRICA EXCHANGE
+   1540        "TQE"   Turquoise (EU)
+   1541        "BSB"   Cboe Europe BXE (EU) (DO NOT USE)
+   1542        "XCE"   Cboe Europe CXE (EU) (DO NOT USE)
+   1543        "AQE"   Aquis (EU)
+   1544        "ECA"   EUROPEAN COCOA ASSOCIATION
+   1545        "FOT"   Forte Securities (EU)
+   1546        "FXA"   FXALL RFQ (EU)
+   1547        "FXM"   Forwards Matching (EU)
+   1548        "TBM"   Tradeweb MTF (EU)
+   1549        "TBO"   Tradeweb OTF (EU)
+   1550        "TBE"   Tradeweb APA/SINT/XOFF/Others (EU)
+   1551        "TEA"   TRAX APA (EU)
+   1552        "TEO"   Tullet Prebon OTF (EU)
+   1553        "IEO"   ICAP OTF (EU)
+   1554        "TEM"   TP ICAP - MTF - ORDERBOOK (EU)
+   1555        "TEP"   TP ICAP - MTF - REGISTRATION (EU)
+   1556        "BEA"   BLOOMBERG APA (EU)
+   1557        "BEM"   BLOOMBERG MTF (EU)
+   1558        "DTN"   DTN
+   1559        "BCU"   Cboe APA (EU)
+   1560        "TRU"   TradEcho APA (EU)
+   1561        "IEI"   Informa Economics FNP
+   1562        "FAO"   THE FOOD & AGRICULTURE ORGANIZATION(FAO) OF THE UN
+   1563        "SLT"   SL tools: Short Selling transactions (Brazilian market)
+   1564        "PRD"   PORT OF ROTTERDAM
+   1565        "NXE"   NOREXECO
+   1566        "RFV"   Refinitiv
+   1567        "WUX"   Wuxi Stainless Steel Electronic Trading Center Co., Ltd.
+   1568        "CMG"   COMMERG
+   1569        "SWZ"   StarWiz Co., Ltd
+   1570        "CHB"   CHS Inc.
+   1571        "UBR"   Urner Barry
+   1572        "DXE"   Cboe Europe DXE (EU)
+   1573        "TWD"   Tradeweb Direct
+   1574        "IBE"   Independent Bulgarian Energy Exchange
+   1575        "NGI"   Natural Gas Intelligence
+   1576        "SOB"   STEEL ORBIS
+   1577        "FBL"   Financial Benchmarks India Private Limited
+   1578        "BLS"   US Bureau Of Labor Statistics
+   1579        "TON"   TonnEdge
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -11276,6 +11347,8 @@ RPT_UNITS   4033
     213   "Tonne   "   Tonne (Metric)
     214   "Bale    "   480 Pound Bale (USDA)
     215   "Pound   "   Pound as a measure of weight as defined by the British Imperial Standards. 1 Pound = 0.4536 Kilograms
+    216   "OZS     "   Troy Ounces
+    217   "USD/TON "   USD per Tonne (metric)
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -11331,6 +11404,7 @@ QUOTE_TYPE  4237
       1        "I  "   Indicative
       2        "E  "   Executable
       3        "C  "   Closed
+      4        "ALG"   Algorithmically Derived
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -11372,6 +11446,7 @@ IMB_ACT_TP  4333
 ! -------    ---
 !
 IMB_SIDE    4340
+IMB_SIDE2  13083
 !
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
@@ -12292,6 +12367,9 @@ IMB_TYPE    6511
 ! -------    ---
 !
 SETL_TYPE   6513
+ALTSETL_TP 13074
+SETL1_TP   13075
+SETL2_TP   13076
 !
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
@@ -12320,6 +12398,7 @@ BOOK_STATE  6516
       2          "L"   Locked
       3          "X"   Crossed
       4          "O"   One-Sided
+      5          "D"   Undeterminable
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -12420,6 +12499,7 @@ SH_SAL_RES  6577
       4          "Y"   Short selling is restricted
       5          "A"   Short Sale Restriction Activated (Duplicated, Not To Be Used)
       6          "D"   Short Sale Restriction Deactivated (Duplicated, Not To Be Used)
+      7          "S"   Short selling is suspended
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -12743,6 +12823,9 @@ MK_PHASE   12765
      14        "POT"   Post-Market Trading
      15        "IC "   Intra-day Close (scheduled)
      16        "QP "   Quotation Only Period
+     17        " U "   Up
+     18        " D "   Down
+     19        " R "   In recovery
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -13029,6 +13112,8 @@ M_SHS_PROP  8947
       8   "SHSMF_MR"   Additional short selling and margin buying facility with margin buying restriction.
       9   "LG-SRD  "   Instrument eligible for the Loan and Lending Market and for deferred settlement service long only.
      10   "LLM     "   Instrument eligible for the Loan and Lending Market.
+     11   "LN_LR   "   Loanable stock with loan restriction
+     12   "LN_LRMR "   Loanable stock with both loan restriction and margin restriction
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -13090,6 +13175,7 @@ REFPRC_TP4 13491
      36   "FIX2    "   Fixing 2
      37   "CLSFIX  "   Close Fixing
      38   "Block   "   Block Deal Reference Price
+     39   "INT_REF "   Intraday reference price
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -15039,6 +15125,7 @@ OFFBK_COND  9049
      33   "DNT     "   Delta Neutral Trade - Underlying Future Leg
      34   "RFCT    "   Request for Cross Trade
      35   "SRFCT   "   Request for Cross Strategy Leg Trade
+     36   "IQS     "   Indicative Quote System Originated Trades
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -15048,7 +15135,7 @@ L2_REPR     9050
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
       0   "        "   Undefined
-      1   "MBP-D   "   Market By Price, derived by Thomson Reuters
+      1   "MBP-D   "   Market By Price, derived by Refinitiv
       2   "MBP-N   "   Market by Price, exchange sourced data (Native)
       3   "MBO     "   Market By Order
 !
@@ -15506,6 +15593,9 @@ SRC_MYLD5  13066
       0   "        "   Undefined
       1   "CTB     "   Data contributed by source
       2   "TRC     "   Data contributed by Thomson Reuters
+      3   "RFVC    "   Data contributed by Refinitiv
+      4   "ETP     "   Data contributed by Electronic Trading Platform
+      5   "PD      "   Data contributed by Primary Dealers
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -15589,6 +15679,8 @@ PHASE_RSN  12822
      16   "UMO     "   Uncrossing by market operations
      17   "AMO     "   Action by market operations
      18   "WTS     "   Waiting for trading state
+     19   "UCOND-RE"   Unconditional Random End Triggered
+     20   "COND-RE "   Conditional Random End Triggered
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -16873,6 +16965,16 @@ ROUTE_INDX 12977
      84   "FBX22   "   Freightos Europe to North America East Coast China/East Asia
      85   "FBX24   "   Freightos Baltic Europe to South America East Coast
      86   "FBX26   "   Freightos Baltic Europe to South America West Coast
+     87   "TD20    "   West Africa to UK-Continent
+     88   "TD21    "   Caribbean to US Gulf (50,000mt fuel oil)
+     89   "S1C_58  "   US Gulf trip to China-south Japan
+     90   "TC2_37  "   Continent to US Atlantic coast (CPP, UNL)
+     91   "TC3_38  "   Caribbean to US Atlantic coast (CPP, UNL)
+     92   "TC11    "   South Korea to Singapore
+     93   "C11_03  "   Delivery China-Japan ; Trip Continent - Med
+     94   "TC15    "   Mediterranean to Japan
+     95   "TD22    "   US Gulf to China
+     96   "TD25    "   US Gulf to Mediterranean
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -16904,6 +17006,9 @@ VESSEL_TYP 12978
      20   "SZ DHull"   Suezmax Range Double Hull Tankers. A double hull is a ship hull design where the bottom and sides of the ship have two complete layers of watertight hull surface.
      21   "LR SHull"   Large Range Single Hull Tankers. A single hull is a ship hull design where the bottom and sides of the ship have only one layer of watertight hull surface.
      22   "LR DHull"   Large Range Double Hull Tankers. A double hull is a ship hull design where the bottom and sides of the ship have two complete layers of watertight hull surface.
+     23   "Handy   "   Handy are small-sized cargo ships with a size less than 40,000 DWT
+     24   "LargRng1"   Large Range 1 tankers are those which carries Clean Products with a dead weight tonnage (DWT) between 55,000 and 79,999
+     25   "LargRng2"   Large Range 2 tankers are those which carries Clean Products with a dead weight tonnage (DWT) between 80,000 and 1,20,000
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -17011,11 +17116,13 @@ OUT_PROD16 13008
      31   "MOG 95R "   Mogas 95 RON
      32   "FO180CST"   Fuel Oil 180 CST
      33   "FO380CST"   Fuel Oil 380 CST
+     34   "GO  0.1%"   GasOil 0.1% Sulphur
 !
 ! ACRONYM    FID
 ! -------    ---
 !
 AVGPRC_TP1 13013
+AVGPRC_TP2 13082
 !
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
@@ -17632,19 +17739,67 @@ INCOME_POL 13069
 ! ACRONYM    FID
 ! -------    ---
 !
-PRE_1ET370 13071
-PRE_1ET371 13072
-PRE_1ET372 13073
-PRE_1ET373 13074
-PRE_1ET374 13075
-PRE_1ET375 13076
-PRE_1ET376 13077
-PRE_1ET377 13078
-PRE_1ET378 13079
-PRE_1ET379 13080
-PRE_1ET380 13081
-PRE_1ET381 13082
-PRE_1ET382 13083
+PRCLMT_TP  13071
+PRCLMT_TP2 13072
+PRCLMT_TP3 13073
+PRCLMT_TP4 13077
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "UNIT    "   Price Unit
+      2   "TICK    "   Tick
+      3   "PERCENT "   Percentage (%)
+!
+! ACRONYM    FID
+! -------    ---
+!
+QUORUM1_TP 13078
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "CONTRIB "   Contributors
+      2   "COUNTRY "   Countries
+!
+! ACRONYM    FID
+! -------    ---
+!
+QUORUM2_TP 13079
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "CONTRIB "   Contributors
+      2   "COUNTRY "   Countries
+!
+! ACRONYM    FID
+! -------    ---
+!
+QUORUM_ST  13080
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "MET     "   Quorum met
+      2   "NOT MET "   Quorum not met
+!
+! ACRONYM    FID
+! -------    ---
+!
+FIXING_ST  13081
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "PUBED   "   Published
+      2   "REFIXING"   Refixing in progress
+      3   "REFIXED "   Refixed
+      4   "NOTSTART"   Not started
+!
+! ACRONYM    FID
+! -------    ---
+!
 PRE_1ET383 13084
 PRE_1ET384 13085
 PRE_1ET385 13086
@@ -18161,6 +18316,12 @@ MET_TYP20  13562
      65   "LV14D   "   Lending Volume for 14-Day Tenor
      66   "LV28D   "   Lending Volume for 28-Day Tenor
      67   "LV182D  "   Lending Volume for 182-Day Tenor
+     68   "MAAMCP  "   Monthly Average AM Close Price
+     69   "MAPMCP  "   Monthly Average PM Close Price
+     70   "YAAMCP  "   Yearly Average AM Close Price
+     71   "YAPMCP  "   Yearly Average PM Close Price
+     72   "MAAV    "   Monthly AM Daily Accumulated Volume
+     73   "MPAV    "   Monthly PM Daily Accumulated Volume
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -18270,6 +18431,7 @@ OWNER      13414
       4   "MKTAXESS"   MarketAxess
       5   "CBID    "   CBID/Perimeter Markets Inc.
       6   "CANPX   "   CanPx - Real Time Data Feed
+      7   "REFINITV"   Refinitiv
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -18688,6 +18850,11 @@ MET_UNIT   13564
     404      " MXN "   Mexican peso
     405      "KVAH "   Kilo Volt Ampere Hours
     406      "ENVCD"   Environmental credit
+    407      "DGE  "   Diesel Gallon Equivalent
+    408      "HfGAL"   Half Gallon
+    409      "12OZS"   12 Ounces
+    410      "16OZS"   16 Ounces
+    411      "2 LTR"   2 Litres
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -18756,6 +18923,14 @@ CAN_TRTFLG 13489
      11      "PA   "   Periodic Auction Trade (typically operating alongside continuous and distinct from other auctions)
      12      "SI   "   Real Time Systematic Internaliser (SI) Trade
      13      "SD   "   Delayed Systematic Internaliser (SI) Trade
+     14      "NT   "   On Exchange Negotiated Trade Waiver Immediate (NTW)
+     15      "ND   "   On Exchange Negotiated Trade Waiver Non Immediate (NTW)
+     16      "LD   "   On Exchange Large In Scale Deferral
+     17      "LO   "   OTC Large In Scale Deferral
+     18      "SL   "   SI Large In Scale Deferral
+     19      "TX   "   On Exchange Non Price Forming Trade/Trade Not Contributing to Price Discovery (NPFT/TNCP)
+     20      "TO   "   OTC On Exchange Non Price Forming Trade/Trade Not Contributing to Price Discovery (NPFT/TNCP)
+     21      "TS   "   SI On Exchange Non Price Forming Trade/Trade Not Contributing to Price Discovery (NPFT/TNCP)
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -18802,6 +18977,12 @@ SETT_RUL   13438
       0      "     "   undefined
       1      "STD  "   Standard
       2      "NSTD "   Non-Standard
+      3      "T+0  "   Same Day; settlement date is transaction date plus 0
+      4      "T+1  "   Next Day; settlement date is transaction date plus 1
+      5      "T+2  "   Settlement date is transaction date plus 2
+      6      "T+3  "   Settlement date is transaction date plus 3
+      7      "T+4  "   Settlement date is transaction date plus 4
+      8      "T+5  "   Settlement date is transaction date plus 5
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -18856,6 +19037,8 @@ TRDSHM_EL2 13569
      10   "SZHK_BS "   Eligible under SZ-HK connect scheme, both buy and sell allowed.
      11   "SZHK_NAS"   Ineligible under SZ-HK connect scheme, sell only.
      12   "SZHK_BSN"   Eligible under SZ-HK connect scheme, but neither buy nor sell allowed.
+     13   "SHHK_SFN"   Eligible under SH-HK connect scheme, both buy and sell allowed. Buy orders suspend due to aggregate foreign shareholdings restriction.
+     14   "SZHK_SFN"   Eligible under SZ-HK connect scheme, both buy and sell allowed, Buy orders suspend due to aggregate foreign shareholdings restriction.
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -20404,6 +20587,45 @@ ORGN_PORT  13579
     461   "MY MYY  "   Miri, Sarawak
     462   "GB HPT  "   Hound Point
     463   "US SJM  "   Saint James
+    464   "AR   ROS"   Rosario
+    465   "BR   IAR"   Itacoatiara
+    466   "RU   VYS"   Vysotsk
+    467   "CN TNG  "   Tianjin Port
+    468   "CN LSN  "   Lanshan Port
+    469   "KR TSN  "   Daesan/Seosan
+    470   "TR LMA  "   Limas
+    471   "TR ADY  "   Yumurtalik
+    472   "TR GEM  "   Gemlik
+    473   "KW SAA  "   Shuaiba
+    474   "IT PMA  "   Marghera
+    475   "IT LIV  "   Livorno
+    476   "ES VIL  "   Villagarcía de Arosa
+    477   "US WTN  "   Wilmington
+    478   "US PAY  "   Perth Amboy
+    479   "ID MRK  "   Merak, Java
+    480   "ID GRE  "   Gresik, Java
+    481   "MY KET  "   Kertih
+    482   "TH BKK  "   Bangkok
+    483   "PH PIS  "   Philippines
+    484   "TW TTT  "   Taitung
+    485   "TW MLI  "   Mai-liao
+    486   "TW KEL  "   Keelung (Chilung)
+    487   "CN ZJG  "   Zhangjiagang
+    488   "CN TAZ  "   Taizhou Port
+    489   "CN NSA  "   Nansha Port
+    490   "CN XMG  "   Xiamen Port
+    491   "CN ZUH  "   Zhuhai Port
+    492   "CN TAC  "   Taicang Port
+    493   "CN QZJ  "   Quanzhou Port
+    494   "JP KIJ  "   Niigata
+    495   "JP KNE  "   Kinoe
+    496   "DZ ALG  "   Alger (Algiers)
+    497   "MX CAT  "   Cayo Arcas
+    498   "RU LED  "   Saint Petersburg
+    499   "RU TAM  "   Taman
+    500   "RU KZP  "   Kavkaz
+    501   "RU SAB  "   Sabetta
+    502   "US CP6  "   Cove Point
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -21069,23 +21291,19 @@ CNV_PAR_UT 13582
 ! -------    ---
 !
 LMT_TYPE   13583
-!
-! VALUE      DISPLAY   MEANING
-! -----      -------   -------
-      0   "        "   undefined
-      1   "Static  "   Static
-      2   "Dynamic "   Dynamic
-!
-! ACRONYM    FID
-! -------    ---
-!
 LMT_TYPE2  13584
+LMT_TYPE3  13599
+LMT_TYPE4  13600
 !
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
       0   "        "   undefined
       1   "Static  "   Static
       2   "Dynamic "   Dynamic
+      3   "Hard    "   Protection tunnel during auction
+      4   "Auction "   Auction tunnel
+      5   "Reject  "   Rejection tunnel
+      6   "IPO Auc "   IPO/Relisting auction price limits
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -21208,6 +21426,21 @@ FIXING_TYP 13597
       4   "RPB_CNT "   Republication of rate determined using contingency methodology
       5   "PROV    "   Provisional rate
       6   "FINAL   "   Final rate
+      7   "1500 JPN"   3:00 PM Japan Fixing Time
+      8   "1530 BEI"   3:30 PM Beijing Fixing Time
+      9   "1600 HKG"   4:00 PM Hong Kong Fixing Time
+     10   "1700 HKG"   5:00 PM Hong Kong Fixing Time
+     11   "1000 LON"   10:00 AM London Fixing Time
+     12   "1200 LON"   12:00 PM London Fixing Time
+     13   "1235 LON"   12:35 PM London Fixing Time
+     14   "0800 NYC"   8:00 AM New York Fixing Time (ET)
+     15   "0900 CHI"   9:00 AM Chicago Fixing Time (CT)
+     16   "1500 LON"   3:00 PM London Fixing Time
+     17   "1630 LON"   4:30 PM London Fixing Time
+     18   "1100 CHI"   11:00 AM Chicago Fixing Time (CT)
+     19   "1400 CHI"   2:00 PM Chicago Fixing Time (CT)
+     20   "1600 NYC"   4:00 PM New York Fixing Time (ET)
+     21   "1500 CHI"   3:00 PM Chicago Fixing Time (CT)
 !
 ! ACRONYM    FID
 ! -------    ---
@@ -21224,11 +21457,28 @@ INST_LB_RU 13598
 ! ACRONYM    FID
 ! -------    ---
 !
-PRE_2ET278 13599
-PRE_2ET279 13600
-PRE_2ET280 13601
-PRE_2ET281 13602
-PRE_2ET282 13603
+BA_CANAL   13601
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "SUEZ    "   Suez Canal
+      2   "PANAMA  "   Panama Canal
+!
+! ACRONYM    FID
+! -------    ---
+!
+LA_CANAL   13602
+!
+! VALUE      DISPLAY   MEANING
+! -----      -------   -------
+      0   "        "   Undefined
+      1   "SUEZ    "   Suez Canal
+      2   "PANAMA  "   Panama Canal
+!
+! ACRONYM    FID
+! -------    ---
+!
 PRE_2ET283 13604
 PRE_2ET284 13605
 PRE_2ET285 13606
@@ -21990,9 +22240,11 @@ DEF_DMI    32312
 ! VALUE      DISPLAY   MEANING
 ! -----      -------   -------
       0   "        "   Undefined
-      1   "LCM     "   LCM
-      2   "UDM     "   UDM
+      1   "LCM     "   Legacy Compatible Model
+      2   "UDM     "   UDM (NOT IN USE)
       3   "UNSPC_DM"   UNSPEC_DM
+      4   "LDM     "   Legacy Data Model
+      5   "PDM     "   Platform Data Model
 !
 ! ACRONYM    FID
 ! -------    ---
