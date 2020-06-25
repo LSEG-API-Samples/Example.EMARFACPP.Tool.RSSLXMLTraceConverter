@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.10-x64</RuntimeIdentifiers>
     <Authors>Moragodkrit Chumsri</Authors>
     <Company>Refinitiv</Company>
@@ -15,12 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RDMDictDecoder">
-      <HintPath>..\libs\rdmdictionarydecoder\netstandard2.0\RDMDictDecoder.dll</HintPath>
-    </Reference>
-    <Reference Include="RSSLTraceDecoder">
-      <HintPath>..\libs\rssltracedecoder\netstandard2.0\RSSLTraceDecoder.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Example.EMARFACPP.Tool.RSSLTraceViewer\RDMDictDecoder\RDMDictDecoder.csproj" />
+    <ProjectReference Include="..\..\Example.EMARFACPP.Tool.RSSLTraceViewer\RSSLTraceDecoder\RSSLTraceDecoder.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
