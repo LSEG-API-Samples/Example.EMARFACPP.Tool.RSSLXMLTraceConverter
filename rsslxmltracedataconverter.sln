@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rsslxmltracedataconverter", "rsslxmltracedataconverter\rsslxmltracedataconverter.csproj", "{9031F951-DAE0-4358-BF31-1B58BFAF7C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rsslxmltracedataconverter", "rsslxmltracedataconverter\rsslxmltracedataconverter.csproj", "{9031F951-DAE0-4358-BF31-1B58BFAF7C47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDMDictDecoder", "RDMDictDecoder\RDMDictDecoder.csproj", "{EEB9A472-8E1C-47EE-BB65-06A4CFDAC621}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSSLTraceDecoder", "RSSLTraceDecoder\RSSLTraceDecoder.csproj", "{9CB102D9-5A27-495A-954B-E3F595557DC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9031F951-DAE0-4358-BF31-1B58BFAF7C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9031F951-DAE0-4358-BF31-1B58BFAF7C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9031F951-DAE0-4358-BF31-1B58BFAF7C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB9A472-8E1C-47EE-BB65-06A4CFDAC621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB9A472-8E1C-47EE-BB65-06A4CFDAC621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB9A472-8E1C-47EE-BB65-06A4CFDAC621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB9A472-8E1C-47EE-BB65-06A4CFDAC621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB102D9-5A27-495A-954B-E3F595557DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB102D9-5A27-495A-954B-E3F595557DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB102D9-5A27-495A-954B-E3F595557DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB102D9-5A27-495A-954B-E3F595557DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

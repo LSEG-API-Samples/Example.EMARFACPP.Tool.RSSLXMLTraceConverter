@@ -15,12 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RDMDictDecoder">
-      <HintPath>..\libs\rdmdictionarydecoder\netstandard2.0\RDMDictDecoder.dll</HintPath>
-    </Reference>
-    <Reference Include="RSSLTraceDecoder">
-      <HintPath>..\libs\rssltracedecoder\netstandard2.0\RSSLTraceDecoder.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\RDMDictDecoder\RDMDictDecoder.csproj" />
+    <ProjectReference Include="..\RSSLTraceDecoder\RSSLTraceDecoder.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
