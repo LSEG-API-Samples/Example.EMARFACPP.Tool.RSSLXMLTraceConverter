@@ -77,7 +77,7 @@ From the above sample, we set DefaultConsumer to "Consumer_1" then EMA will chec
 
 ## Utility download
 
-The project and README are available for Download from [GitHub](https://github.com/TR-API-Samples/Example.EMARFACPP.Tool.RSSLTraceViewer).
+The project and README are available for Download from [GitHub](https://github.com/Refinitiv-API-Samples/Example.EMARFACPP.Tool.RSSLTraceViewer).
 
 ## Running the Utility
 
