@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.10-x64</RuntimeIdentifiers>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifiers></RuntimeIdentifiers>
     <Authors>Moragodkrit Chumsri</Authors>
-    <Company>Refinitiv</Company>
+    <Company>LSEG</Company>
     <Product>RSSL Trace Data Converter</Product>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.3.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,11 +19,22 @@
     <ProjectReference Include="..\RSSLTraceDecoder\RSSLTraceDecoder.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="IF NOT EXIST &quot;$(TargetDir)Dict\&quot; (md &quot;$(TargetDir)Dict&quot;) &#xD;&#xA;IF NOT EXIST &quot;$(TargetDir)Dict\RDMFieldDictionary&quot; ( copy &quot;$(ProjectDir)Dict\RDMFieldDictionary&quot; &quot;$(TargetDir)Dict&quot;)  &#xD;&#xA;IF NOT EXIST &quot;$(TargetDir)Dict\enumtype.def&quot; ( copy &quot;$(ProjectDir)Dict\enumtype.def&quot; &quot;$(TargetDir)Dict&quot;) &#xD;&#xA;" Condition="'$(OS)' != 'UNIX'" />
-    <Exec Command="mkdir -p $(TargetDir)\Dict" Condition="'$(OS)' == 'Unix'" />
-    <Copy SourceFiles="$(ProjectDir)Dict\RDMFieldDictionary" DestinationFolder="$(TargetDir)Dict" Condition="'$(OS)' == 'Unix'" />
-    <Copy SourceFiles="$(ProjectDir)Dict\enumtype.def" DestinationFolder="$(TargetDir)Dict" Condition="'$(OS)' == 'Unix'" />
 
 
   </Target>
